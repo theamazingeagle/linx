@@ -11,3 +11,7 @@
 
 Репозиторий необходимо выложить на github и предоставить ссылку.
 _____________
+
+docker build -t linx-docker .
+
+docker run -v $(pwd)/data:/data linx-docker

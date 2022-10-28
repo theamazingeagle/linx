@@ -12,13 +12,9 @@ import (
 
 // Record
 type Record struct {
-	Name   string
-	Price  int
-	Rating int
-}
-
-func (r *Record) ToString() string {
-	return r.Name + "," + strconv.Itoa(r.Price) + "," + strconv.Itoa(r.Rating)
+	Name   string `json:"name"`
+	Price  int    `json:"price"`
+	Rating int    `json:"rating"`
 }
 
 // search: читаем построчно, запоминаем и обновляем нужное
